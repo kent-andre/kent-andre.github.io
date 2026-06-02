@@ -5,23 +5,32 @@ body {
   color: white;
 }
 
-/* NAVBAR */
 .navbar {
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   padding: 20px 50px;
   background: rgba(0,0,0,0.6);
   backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.navbar h2 {
+  margin: 0;
 }
 
 .navbar ul {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
   display: flex;
   gap: 25px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
 .navbar a {
   color: #ccc;
   text-decoration: none;
