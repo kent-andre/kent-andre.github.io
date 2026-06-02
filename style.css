@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0a0f1c, #111a33);
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0a0f1c, #111a2e);
   color: white;
 }
 
@@ -29,54 +29,62 @@ body {
 }
 
 .navbar a:hover {
-  color: #a78bfa;
+  color: white;
 }
 
 /* HERO */
 .hero {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 80px 50px;
+  justify-content: space-between;
+  padding: 80px 60px;
 }
 
-.hero-img img {
-  width: 220px;
-  border-radius: 50%;
-  box-shadow: 0 0 40px rgba(167,139,250,0.5);
+.hero-text {
+  max-width: 600px;
 }
 
-/* TEXT STYLES */
-.section-label {
-  color: #a78bfa;
-  font-size: 12px;
-  letter-spacing: 2px;
-}
-
-h1 {
-  font-size: 42px;
+.hero h1 {
+  font-size: 40px;
 }
 
 .subtitle {
-  color: #ccc;
-  margin-bottom: 10px;
+  color: #aaa;
+  margin: 15px 0;
 }
 
-.description {
-  color: #aaa;
-  max-width: 500px;
+.hero img {
+  width: 220px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(138,43,226,0.4);
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, purple, violet);
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
 }
 
 /* SECTIONS */
 section {
-  padding: 60px 50px;
+  padding: 70px 60px;
+}
+
+.section-desc {
+  color: #aaa;
+  max-width: 600px;
 }
 
 /* CARDS */
 .card, .project-card {
   background: rgba(255,255,255,0.05);
-  padding: 20px;
-  margin-top: 20px;
+  padding: 25px;
+  margin-top: 25px;
   border-radius: 15px;
   backdrop-filter: blur(10px);
   transition: 0.3s;
@@ -87,24 +95,18 @@ section {
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-/* PROJECT TAGS */
-.tags {
+.card-desc {
+  color: #bbb;
   margin-top: 10px;
 }
 
-.tags span {
-  background: rgba(167,139,250,0.2);
-  padding: 5px 10px;
-  border-radius: 10px;
-  margin-right: 5px;
-  font-size: 12px;
-}
-
-/* BUTTON */
+/* PROJECT BUTTON */
 .project-card a {
   display: inline-block;
   margin-top: 15px;
-  color: #a78bfa;
+  padding: 8px 18px;
+  background: linear-gradient(45deg, #6a0dad, #9b59ff);
+  border-radius: 6px;
   text-decoration: none;
-  font-weight: bold;
+  color: white;
 }
