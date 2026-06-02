@@ -32,33 +32,35 @@ body {
   color: white;
 }
 
-/* HERO */
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 80px 60px;
+  position: relative;
+  overflow: hidden;
 }
 
-.hero-text {
-  max-width: 600px;
-}
+/* Purple glow */
+.hero::before {
+  content: "";
+  position: absolute;
+  left: -250px;
+  top: 50%;
+  transform: translateY(-50%);
 
-.hero h1 {
-  font-size: 40px;
-}
+  width: 800px;
+  height: 800px;
 
-.subtitle {
-  color: #aaa;
-  margin: 15px 0;
-}
+  background: radial-gradient(
+    circle,
+    rgba(138, 43, 226, 0.35) 0%,
+    rgba(138, 43, 226, 0.15) 40%,
+    transparent 75%
+  );
 
-.hero img {
-  width: 220px;
-  border-radius: 50%;
-  box-shadow: 0 0 30px rgba(138,43,226,0.4);
+  z-index: -1;
 }
-
 /* BUTTON */
 .btn {
   display: inline-block;
