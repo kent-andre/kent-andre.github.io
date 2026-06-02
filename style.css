@@ -1,58 +1,110 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0a0f1c;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0a0f1c, #111a33);
   color: white;
 }
 
 /* NAVBAR */
-nav {
+.navbar {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
-  padding: 15px 30px;
-  background: #111;
+  padding: 20px 50px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
 }
 
-nav ul {
-  list-style: none;
+.navbar ul {
   display: flex;
-  gap: 20px;
+  gap: 25px;
+  list-style: none;
 }
 
-nav a {
-  color: white;
+.navbar a {
+  color: #ccc;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #a78bfa;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 50px;
+}
+
+.hero-img img {
+  width: 220px;
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(167,139,250,0.5);
+}
+
+/* TEXT STYLES */
+.section-label {
+  color: #a78bfa;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+.subtitle {
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #aaa;
+  max-width: 500px;
 }
 
 /* SECTIONS */
 section {
-  padding: 50px;
-  text-align: center;
-}
-
-/* PROFILE IMAGE */
-#about img {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
+  padding: 60px 50px;
 }
 
 /* CARDS */
-.card {
+.card, .project-card {
   background: rgba(255,255,255,0.05);
   padding: 20px;
-  margin: 15px auto;
-  width: 300px;
+  margin-top: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.card:hover, .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* PROJECT TAGS */
+.tags {
+  margin-top: 10px;
+}
+
+.tags span {
+  background: rgba(167,139,250,0.2);
+  padding: 5px 10px;
   border-radius: 10px;
+  margin-right: 5px;
+  font-size: 12px;
 }
 
 /* BUTTON */
-.card a {
+.project-card a {
   display: inline-block;
-  margin-top: 10px;
-  padding: 8px 15px;
-  background: purple;
-  color: white;
+  margin-top: 15px;
+  color: #a78bfa;
   text-decoration: none;
-  border-radius: 5px;
+  font-weight: bold;
 }
