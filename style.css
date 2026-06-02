@@ -5,39 +5,44 @@ body {
   color: white;
 }
 
+/* NAVBAR */
 .navbar {
-  position: sticky;
-  top: 0;
-  display: flex;
-  align-items: center;
-  padding: 20px 50px;
+  width: 100%;
   background: rgba(0,0,0,0.6);
   backdrop-filter: blur(10px);
-  position: relative;
 }
 
-.navbar h2 {
-  margin: 0;
-}
-
-.navbar ul {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+/* CONTAINER CONTROLS WIDTH */
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 0;
 
   display: flex;
-  gap: 25px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  justify-content: space-between;
 }
-.navbar a {
-  color: #ccc;
+
+/* LOGO */
+.logo {
+  font-weight: 700;
+}
+
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+/* LINKS */
+.nav-links a {
   text-decoration: none;
+  color: #ccc;
   transition: 0.3s;
 }
 
-.navbar a:hover {
+.nav-links a:hover {
   color: white;
 }
 
