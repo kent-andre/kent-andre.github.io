@@ -1,19 +1,34 @@
-body {
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #0a0f1c, #111a2e);
   color: white;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
 }
 
 /* NAVBAR */
 .navbar {
   position: sticky;
   top: 0;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 50px;
   background: rgba(0,0,0,0.6);
   backdrop-filter: blur(10px);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
 }
 
 .navbar ul {
@@ -23,9 +38,8 @@ body {
 }
 
 .navbar a {
-  color: #ccc;
   text-decoration: none;
-  transition: 0.3s;
+  color: #ccc;
 }
 
 .navbar a:hover {
@@ -37,11 +51,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 60px;
+  padding: 100px 0;
+  gap: 40px;
 }
 
 .hero-text {
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .hero h1 {
@@ -72,35 +87,49 @@ body {
 
 /* SECTIONS */
 section {
-  padding: 70px 60px;
+  padding: 100px 0;
 }
 
 .section-desc {
   color: #aaa;
-  max-width: 600px;
+  margin-bottom: 20px;
 }
 
 /* CARDS */
-.card, .project-card {
-  background: rgba(255,255,255,0.05);
-  padding: 25px;
-  margin-top: 25px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  transition: 0.3s;
-}
-
-.card:hover, .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+.card {
+  background: rgba(255,255,255,0.04);
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
 }
 
 .card-desc {
-  color: #bbb;
   margin-top: 10px;
+  color: #bbb;
 }
 
-/* PROJECT BUTTON */
+/* PROJECT GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* PROJECT CARD */
+.project-card {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
 .project-card a {
   display: inline-block;
   margin-top: 15px;
@@ -109,4 +138,16 @@ section {
   border-radius: 6px;
   text-decoration: none;
   color: white;
+}
+
+/* BACKGROUND GLOW */
+body::before {
+  content: "";
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(138,43,226,0.2), transparent);
+  top: -100px;
+  left: -100px;
+  z-index: -1;
 }
