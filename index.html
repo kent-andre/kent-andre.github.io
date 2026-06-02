@@ -3,133 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Kent Portfolio</title>
 
-  <link rel="stylesheet" href="style.css">
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
-  <h2>Kent.</h2>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+  <div class="container nav-container">
+    <h2>Kent</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
 </nav>
 
 <!-- HERO -->
-<section id="about" class="hero">
-  <div class="hero-text">
-    <p class="section-label">INTRODUCTION</p>
-    <h1>Hi, I'm Kent 👋</h1>
-    <p class="subtitle">
-      A passionate BS Information Technology student who enjoys building clean,
-      responsive, and meaningful digital experiences.
-    </p>
+<section id="about">
+  <div class="container hero">
+    <div class="hero-text">
+      <h1>Hello, I'm Kent 👋</h1>
 
-    <p class="description">
-      I am constantly exploring new technologies and improving my skills in
-      web development, programming, and system design. I enjoy solving problems,
-      creating user-friendly interfaces, and turning ideas into real projects.
-      My goal is to grow as a developer and build applications that make an impact.
-    </p>
-  </div>
+      <p class="subtitle">
+        BSIT student focused on building clean, modern, and functional websites.
+      </p>
 
-  <div class="hero-img">
-    <img src="images/profile.jpg" alt="Profile">
+      <p>
+        I enjoy learning new technologies and turning ideas into real-world projects.
+        I'm continuously improving my skills in web development, system design,
+        and problem-solving.
+      </p>
+
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+
+    <div class="hero-img">
+      <img src="images/profile.jpg" alt="Profile">
+    </div>
   </div>
 </section>
 
 <!-- EDUCATION -->
 <section id="education">
-  <p class="section-label">EDUCATION</p>
-  <h2>Where I studied</h2>
-
-  <div class="card">
-    <h3>BS Information Technology</h3>
-    <p>Davao del Norte State College</p>
-    <span>2025 - Present</span>
-    <p>
-      Focused on web development, database management, and system analysis.
-      Actively participating in academic and technical projects.
+  <div class="container">
+    <h2>Education</h2>
+    <p class="section-desc">
+      My academic journey in technology and development.
     </p>
-  </div>
 
-  <div class="card">
-    <h3>Senior High School – STEM</h3>
-    <p>Panabo City National High School</p>
-    <span>2020 - 2025</span>
-    <p>
-      Completed STEM strand with strong academic performance,
-      gaining a solid foundation in science and problem-solving.
-    </p>
-  </div>
+    <div class="card">
+      <h3>BS Information Technology</h3>
+      <p>Davao del Norte State College</p>
+      <span>2025 - Present</span>
+      <p class="card-desc">
+        Focused on web development, databases, and system design.
+      </p>
+    </div>
 
+    <div class="card">
+      <h3>Senior High School - STEM</h3>
+      <p>Panabo City National High School</p>
+      <span>2020 - 2025</span>
+      <p class="card-desc">
+        Strong background in science, math, and technology.
+      </p>
+    </div>
+  </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-  <p class="section-label">PROJECTS</p>
-  <h2>Things I've built</h2>
-
-  <div class="project-card">
-    <h3>PetSim RPG</h3>
-    <p>
-      A command-line Java application simulating a pet-raising RPG using
-      fundamental object-oriented programming concepts.
+  <div class="container">
+    <h2>Projects</h2>
+    <p class="section-desc">
+      Some of my works and practice projects.
     </p>
 
-    <div class="tags">
-      <span>Java</span>
-      <span>CLI</span>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <h3>PetSim RPG</h3>
+        <p>A Java CLI game for managing a virtual pet.</p>
+        <a href="https://github.com/kent-andre" target="_blank">View Code</a>
+      </div>
+
+      <div class="project-card">
+        <h3>QBank System</h3>
+        <p>Banking system using Java & MySQL.</p>
+        <a href="https://github.com/kent-andre" target="_blank">View Code</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>My personal website built using HTML & CSS.</p>
+        <a href="https://github.com/kent-andre" target="_blank">View Code</a>
+      </div>
+
     </div>
-
-    <a href="https://github.com/kent-andre/petsim" target="_blank">
-      View on GitHub →
-    </a>
   </div>
-
-  <div class="project-card">
-    <h3>QBank</h3>
-    <p>
-      A simple banking system built with Java and MySQL, featuring user
-      authentication and transaction management.
-    </p>
-
-    <div class="tags">
-      <span>Java</span>
-      <span>MySQL</span>
-    </div>
-
-    <a href="https://github.com/kent-andre/qbank" target="_blank">
-      View on GitHub →
-    </a>
-  </div>
-
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-  <p class="section-label">CONTACT</p>
-  <h2>Let's connect</h2>
+  <div class="container">
+    <h2>Contact</h2>
+    <p class="section-desc">
+      Feel free to reach out for projects or collaboration.
+    </p>
 
-  <p class="description">
-    Have a project in mind or just want to connect? Feel free to reach out.
-    I'm always open to opportunities and collaborations.
-  </p>
-
-  <div class="card">
     <p>Email: your@email.com</p>
-    <p>GitHub: github.com/kent-andre</p>
   </div>
-
 </section>
 
 </body>
