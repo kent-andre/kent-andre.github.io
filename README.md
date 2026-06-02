@@ -16,12 +16,12 @@
 
 <!-- NAVBAR -->
 <nav class="navbar navbar-dark bg-dark px-3">
-  <span class="navbar-brand">Mikkei.</span>
+  <span class="navbar-brand">Kent.</span>
 </nav>
 
 <!-- HERO -->
 <section class="container text-white mt-5">
-  <h1>Hi, I'm Mike</h1>
+  <h1>Hi, I'm Kent</h1>
   <p>Aspiring Web Developer</p>
 </section>
 
@@ -41,8 +41,8 @@
   <h2>Projects</h2>
 
   <div class="card p-3 mt-3">
-    <h5>PetSim RPG</h5>
-    <p>Java CLI project</p>
+    <h5>Website Food Restaurant</h5>
+    <p>Java Clinic Management System</p>
   </div>
 
 </section>
@@ -50,7 +50,7 @@
 <!-- CONTACT -->
 <section class="container mt-5 text-white">
   <h2>Contact</h2>
-  <p>Email: your@email.com</p>
+  <p>Email: kentandreaguilar@email.com</p>
 </section>
 
 </body>
