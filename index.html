@@ -17,21 +17,21 @@
 
 <nav class="navbar">
   <div class="container nav-container">
-    <h2 class="logo">Kent</h2>
+    <h2 class="logo">Ke-nt</h2>
 
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 </nav>
 <!-- HERO -->
-<section id="about">
+
   <div class="container hero">
     <div class="hero-text">
-      <h1>Hello, I'm Kent 👋</h1>
+      <h1>Hello, I'm Kent Andre Aguilar 👋</h1>
 
       <p class="subtitle">
         BSIT student focused on building clean, modern, and functional websites.
@@ -50,34 +50,31 @@
       <img src="images/profile.jpg" alt="Profile">
     </div>
   </div>
-</section>
 
-<!-- EDUCATION -->
-<section id="education">
-  <div class="container">
-    <h2>Education</h2>
-    <p class="section-desc">
-      My academic journey in technology and development.
-    </p>
+ <section id="about">
+<div class="card">
+  <img src="images/dnsc.jpg" alt="Davao del Norte State College" class="school-img">
 
-    <div class="card">
-      <h3>BS Information Technology</h3>
-      <p>Davao del Norte State College</p>
-      <span>2025 - Present</span>
-      <p class="card-desc">
-        Focused on web development, databases, and system design.
-      </p>
-    </div>
+  <h3>BS Information Technology</h3>
+  <p>Davao del Norte State College</p>
+  <span>2025 - Present</span>
 
-    <div class="card">
-      <h3>Senior High School - STEM</h3>
-      <p>Carmen National High School</p>
-      <span>2020 - 2025</span>
-      <p class="card-desc">
-        Strong background in science, math, and technology.
-      </p>
-    </div>
-  </div>
+  <p class="card-desc">
+    Focused on web development, databases, and system design.
+  </p>
+</div>
+
+<div class="card">
+  <img src="images/cnhs.jpg" alt="Carmen National High School" class="school-img">
+
+  <h3>Senior High School - STEM</h3>
+  <p>Carmen National High School</p>
+  <span>2020 - 2025</span>
+
+  <p class="card-desc">
+    Strong background in science, math, and technology.
+  </p>
+</div>
 </section>
 
 <!-- PROJECTS -->
@@ -91,18 +88,24 @@
     <div class="projects-grid">
 
       <div class="project-card">
+        <img src="images/project1.jpg" alt="Food Website" class="project-img">
+
         <h3>Food Restaurant Website</h3>
         <p>A Restaurant website for ordering food</p>
         <a href="https://github.com/kent-andre" target="_blank">View Code</a>
       </div>
 
       <div class="project-card">
+        <img src="images/project2.jpg" alt="Clinic System" class="project-img">
+
         <h3>Clinic Management System</h3>
         <p>A Clinic System using Java & MySQL.</p>
         <a href="https://github.com/kent-andre" target="_blank">View Code</a>
       </div>
 
       <div class="project-card">
+        <img src="images/project3.jpg" alt="Portfolio Website" class="project-img">
+
         <h3>Portfolio Website</h3>
         <p>My personal website built using HTML & CSS.</p>
         <a href="https://github.com/kent-andre" target="_blank">View Code</a>
@@ -112,15 +115,77 @@
   </div>
 </section>
 
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <p class="section-desc">
+      A combination of my personal strengths and technical abilities.
+    </p>
+
+    <div class="skills-grid">
+
+      <!-- SOFT SKILLS -->
+      <div class="skill-card">
+        <h4>Adaptability</h4>
+        <p>Quickly adjust to new environments and challenges.</p>
+      </div>
+
+      <div class="skill-card">
+        <h4>Critical Thinking</h4>
+        <p>Analyze problems and create effective solutions.</p>
+      </div>
+
+      <div class="skill-card">
+        <h4>Team Collaboration</h4>
+        <p>Work well with others to achieve common goals.</p>
+      </div>
+
+      <!-- TECH SKILLS -->
+      <div class="tech-card">
+        <h4>Java</h4>
+        <div class="bar"><span class="fill three"></span></div>
+      </div>
+
+      <div class="tech-card">
+        <h4>HTML5</h4>
+        <div class="bar"><span class="fill three"></span></div>
+      </div>
+
+      <div class="tech-card">
+        <h4>CSS3</h4>
+        <div class="bar"><span class="fill three"></span></div>
+      </div>
+
+      <div class="tech-card">
+        <h4>Bootstrap</h4>
+        <div class="bar"><span class="fill three"></span></div>
+      </div>
+
+      <div class="tech-card">
+        <h4>VS Code</h4>
+        <div class="bar"><span class="fill three"></span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section id="contact">
-  <div class="container">
+  <div class="container contact-container">
+    
     <h2>Contact</h2>
     <p class="section-desc">
       Feel free to reach out for projects or collaboration.
     </p>
 
-    <p>Email: aguilar.kentandre@dnsc.edu.ph</p>
+    <div class="contact-card">
+      <p>Email</p>
+      <h3>aguilar.kentandre@dnsc.edu.ph</h3>
+      <a href="mailto:aguilar.kentandre@dnsc.edu.ph" class="contact-btn">Send Message</a>
+    </div>
+
   </div>
 </section>
 
