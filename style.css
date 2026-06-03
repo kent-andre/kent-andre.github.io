@@ -97,6 +97,111 @@ section {
   box-shadow: 0 0 10px violet;
 }
 
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media screen and (max-width: 768px) {
+
+  /* Navbar */
+  .nav-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .nav-links {
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 50px 25px;
+    gap: 30px;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  /* Profile Picture */
+  .hero-img img {
+    width: 320px;
+    height: 320px;
+    margin: auto;
+  }
+
+  /* Sections */
+  section {
+    padding: 60px 25px;
+  }
+
+  /* Skills */
+  .skills-grid {
+    justify-content: center;
+  }
+
+  .skill-card,
+  .tech-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Contact */
+  .contact-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-img img {
+    width: 260px;
+    height: 260px;
+  }
+}
+
 /* HERO */
 .hero {
   display: flex;
@@ -376,116 +481,3 @@ section {
     0 0 25px rgba(138, 43, 226, 0.5);
 }
 
-/* =========================
-   MOBILE RESPONSIVE FIX
-   ========================= */
-@media (max-width: 768px) {
-
-  /* Navbar */
-  .nav-container {
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px;
-  }
-
-  .logo {
-    font-size: 2rem;
-    white-space: nowrap;
-    text-align: center;
-  }
-
-  .nav-links {
-    padding: 0;
-    margin: 0;
-    gap: 18px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .nav-links a {
-    font-size: 1rem;
-  }
-
-  /* Hero Section */
-  .hero {
-    flex-direction: column-reverse;
-    text-align: center;
-    padding: 50px 25px;
-    gap: 30px;
-  }
-
-  .hero-content {
-    width: 100%;
-  }
-
-  .hero-content h1 {
-    font-size: 2.5rem;
-    line-height: 1.2;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
-
-  /* Profile Image */
-  .hero-img img {
-    width: 250px;
-    height: 250px;
-    margin: 0 auto;
-  }
-
-  /* Sections */
-  section {
-    padding: 60px 25px;
-  }
-
-  /* Skills Cards */
-  .skills-grid {
-    justify-content: center;
-  }
-
-  .skill-card,
-  .tech-card {
-    width: 100%;
-    max-width: 320px;
-  }
-
-  /* Contact Card */
-  .contact-card {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  /* Buttons */
-  .btn,
-  .contact-btn {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-/* Extra Small Phones */
-@media (max-width: 480px) {
-
-  .logo {
-    font-size: 1.7rem;
-  }
-
-  .nav-links {
-    gap: 12px;
-  }
-
-  .nav-links a {
-    font-size: 0.9rem;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .hero-img img {
-    width: 280px;
-    height: 280px;
-  }
-}
